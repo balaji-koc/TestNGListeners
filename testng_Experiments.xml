@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite_01">
+<listeners>
+<!-- <listener class-name="listeners.TestListeners"></listener>
+ <listener class-name="listeners.AnnotationTransformer"></listener> -->
+<listener class-name="listeners.ExtentReportNG"></listener>
+</listeners>
+
+  <test name="Listeners-Ex-Test-Group-01">
+    <classes>
+      <class name="testcases.TC_01"/>
+    </classes>
+  </test> <!-- Test -->
+
+  <test name="Listeners-Ex-Test-Group-02">
+    <classes>
+      <class name="testcases.TC_02"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+

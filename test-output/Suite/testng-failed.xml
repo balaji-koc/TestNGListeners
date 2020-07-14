@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="listeners.TestListeners"/>
+    <listener class-name="listeners.AnnotationTransformer"/>
+    <listener class-name="listeners.ExtentReportNG"/>
+  </listeners>
+  <test name="Listeners-example-01(failed)">
+    <classes>
+      <class name="testcases.TC_01">
+        <methods>
+          <include name="method_04"/>
+        </methods>
+      </class> <!-- testcases.TC_01 -->
+    </classes>
+  </test> <!-- Listeners-example-01(failed) -->
+  <test name="Listeners-example-02(failed)">
+    <classes>
+      <class name="testcases.TC_02">
+        <methods>
+          <include name="method_04"/>
+        </methods>
+      </class> <!-- testcases.TC_02 -->
+    </classes>
+  </test> <!-- Listeners-example-02(failed) -->
+</suite> <!-- Failed suite [Suite] -->

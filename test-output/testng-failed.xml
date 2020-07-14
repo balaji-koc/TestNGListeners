@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite_01]">
+  <test name="Listeners-Ex-Test-Group-01(failed)">
+    <groups>
+      <run>
+        <include name="masters"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testcases.TC_01">
+        <methods>
+          <include name="method_04"/>
+        </methods>
+      </class> <!-- testcases.TC_01 -->
+    </classes>
+  </test> <!-- Listeners-Ex-Test-Group-01(failed) -->
+</suite> <!-- Failed suite [Suite_01] -->
