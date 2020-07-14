@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite_01">
-                    <span>F:\NewPractice\TestNGListeners\testng_groups.xml</span>
+                    <span>C:\Users\Balaji\git\TestNGListeners\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite_01">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                    <span class="method-stats">12 methods, 3 failed,  1 skipped,  8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -105,7 +105,31 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite_01" title="testcases.TC_01" hash-for-method="method_04">method_04</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_01" title="testcases.TC_02" hash-for-method="method_08">method_08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_01" title="testcases.TC_03" hash-for-method="method_12">method_12</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content failed suite-Suite_01 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite_01" class="hide-methods skipped suite-Suite_01"> (hide)</a> <!-- hide-methods skipped suite-Suite_01 -->
+                      <a href="#" panel-name="suite-Suite_01" class="show-methods skipped suite-Suite_01"> (show)</a> <!-- show-methods skipped suite-Suite_01 -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite_01">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_01" title="testcases.TC_02" hash-for-method="method_05">method_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite_01 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -126,7 +150,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite_01" title="testcases.TC_02" hash-for-method="method_05">method_05</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_01" title="testcases.TC_01" hash-for-method="method_03">method_03</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -141,7 +165,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite_01" title="testcases.TC_02" hash-for-method="method_08">method_08</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_01" title="testcases.TC_03" hash-for-method="method_09">method_09</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_01" title="testcases.TC_03" hash-for-method="method_10">method_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite_01" title="testcases.TC_03" hash-for-method="method_11">method_11</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite_01 -->
@@ -175,9 +209,47 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite_01-class-failed -->
-          <div class="suite-Suite_01-class-passed">
+          <div class="suite-Suite_01-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TC_03</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="method_12">
+                  </a> <!-- method_12 -->
+                  <span class="method-name">method_12</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at testcases.TC_03.method_12(TC_03.java:33)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_01-class-failed -->
+          <div class="suite-Suite_01-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TC_02</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="method_08">
+                  </a> <!-- method_08 -->
+                  <span class="method-name">method_08</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at testcases.TC_02.method_08(TC_02.java:33)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_01-class-failed -->
+          <div class="suite-Suite_01-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">testcases.TC_02</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -186,31 +258,13 @@
                   <a name="method_05">
                   </a> <!-- method_05 -->
                   <span class="method-name">method_05</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="method_06">
-                  </a> <!-- method_06 -->
-                  <span class="method-name">method_06</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="method_07">
-                  </a> <!-- method_07 -->
-                  <span class="method-name">method_07</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="method_08">
-                  </a> <!-- method_08 -->
-                  <span class="method-name">method_08</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC_02.method_05()[pri:6, instance:testcases.TC_02@4883b407] depends on not successfully finished methods
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite_01-class-passed -->
+          </div> <!-- suite-Suite_01-class-skipped -->
           <div class="suite-Suite_01-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -231,29 +285,95 @@
                   <span class="method-name">method_02</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method_03">
+                  </a> <!-- method_03 -->
+                  <span class="method-name">method_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_01-class-passed -->
+          <div class="suite-Suite_01-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC_03</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="method_09">
+                  </a> <!-- method_09 -->
+                  <span class="method-name">method_09</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method_10">
+                  </a> <!-- method_10 -->
+                  <span class="method-name">method_10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method_11">
+                  </a> <!-- method_11 -->
+                  <span class="method-name">method_11</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_01-class-passed -->
+          <div class="suite-Suite_01-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC_02</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="method_06">
+                  </a> <!-- method_06 -->
+                  <span class="method-name">method_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="method_07">
+                  </a> <!-- method_07 -->
+                  <span class="method-name">method_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite_01-class-passed -->
         </div> <!-- panel Suite_01 -->
         <div panel-name="test-xml-Suite_01" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\NewPractice\TestNGListeners\testng_groups.xml</span>
+            <span class="header-content">C:\Users\Balaji\git\TestNGListeners\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite_01&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.MyExtentReportNG&quot;/&gt;
+    &lt;listener class-name=&quot;listeners.ExtentTestNGIReporterListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;Listeners-Ex-Test-Group-01&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;masters&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.TC_01&quot;/&gt;
-      &lt;class name=&quot;testcases.TC_02&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Listeners-Ex-Test-Group-01 --&gt;
+  &lt;test name=&quot;Listeners-Ex-Test-Group-02&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.TC_02&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Listeners-Ex-Test-Group-02 --&gt;
+  &lt;test name=&quot;Listeners-Ex-Test-Group-03&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.TC_03&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Listeners-Ex-Test-Group-03 --&gt;
 &lt;/suite&gt; &lt;!-- Suite_01 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -265,7 +385,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Listeners-Ex-Test-Group-01 (2 classes)</span>
+                <span class="test-name">Listeners-Ex-Test-Group-01 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Listeners-Ex-Test-Group-02 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Listeners-Ex-Test-Group-03 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -280,6 +406,10 @@
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">method_01</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">method_03</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -339,40 +469,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(12);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'method_02')
 data.setCell(0, 2, 'testcases.TC_01')
-data.setCell(0, 3, 22);
+data.setCell(0, 3, 55);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'method_08')
 data.setCell(1, 2, 'testcases.TC_02')
-data.setCell(1, 3, 4);
+data.setCell(1, 3, 5);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'method_04')
 data.setCell(2, 2, 'testcases.TC_01')
-data.setCell(2, 3, 3);
+data.setCell(2, 3, 4);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'method_05')
-data.setCell(3, 2, 'testcases.TC_02')
-data.setCell(3, 3, 2);
+data.setCell(3, 1, 'method_11')
+data.setCell(3, 2, 'testcases.TC_03')
+data.setCell(3, 3, 4);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'method_06')
-data.setCell(4, 2, 'testcases.TC_02')
-data.setCell(4, 3, 2);
+data.setCell(4, 1, 'method_03')
+data.setCell(4, 2, 'testcases.TC_01')
+data.setCell(4, 3, 3);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'method_01')
-data.setCell(5, 2, 'testcases.TC_01')
-data.setCell(5, 3, 2);
+data.setCell(5, 1, 'method_10')
+data.setCell(5, 2, 'testcases.TC_03')
+data.setCell(5, 3, 3);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'method_07')
-data.setCell(6, 2, 'testcases.TC_02')
+data.setCell(6, 1, 'method_01')
+data.setCell(6, 2, 'testcases.TC_01')
 data.setCell(6, 3, 2);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'method_06')
+data.setCell(7, 2, 'testcases.TC_02')
+data.setCell(7, 3, 2);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'method_07')
+data.setCell(8, 2, 'testcases.TC_02')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'method_09')
+data.setCell(9, 2, 'testcases.TC_03')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'method_12')
+data.setCell(10, 2, 'testcases.TC_03')
+data.setCell(10, 3, 2);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'method_05')
+data.setCell(11, 2, 'testcases.TC_02')
+data.setCell(11, 3, 0);
 window.suiteTableData['Suite_01']= { tableData: data, tableDiv: 'times-div-Suite_01'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 ms</span>
+              <span class="suite-total-time">Total running time: 84 ms</span>
               <div id="times-div-Suite_01">
               </div> <!-- times-div-Suite_01 -->
             </div> <!-- times-div -->
@@ -387,16 +537,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite_01" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testcases.TC_01</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">method_03</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite_01" class="panel">
@@ -410,40 +553,57 @@ return data;
                 <span class="method-name">method_02</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.TC_02</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">method_08</span>
-                <span class="method-start">28 ms</span>
+                <span class="method-name">method_03</span>
+                <span class="method-start">82 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.TC_01</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">method_01</span>
-                <span class="method-start">36 ms</span>
+                <span class="method-start">90 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">method_04</span>
-                <span class="method-start">42 ms</span>
+                <span class="method-start">95 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_02</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">method_08</span>
+                <span class="method-start">150 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">method_07</span>
-                <span class="method-start">56 ms</span>
+                <span class="method-start">162 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_06</span>
-                <span class="method-start">61 ms</span>
+                <span class="method-start">168 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_03</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">method_09</span>
+                <span class="method-start">221 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">method_05</span>
-                <span class="method-start">68 ms</span>
+                <span class="method-name">method_10</span>
+                <span class="method-start">227 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">method_11</span>
+                <span class="method-start">233 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">method_12</span>
+                <span class="method-start">240 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

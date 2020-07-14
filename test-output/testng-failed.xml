@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite_01]">
+  <listeners>
+    <listener class-name="listeners.MyExtentReportNG"/>
+    <listener class-name="listeners.ExtentTestNGIReporterListener"/>
+  </listeners>
   <test name="Listeners-Ex-Test-Group-01(failed)">
-    <groups>
-      <run>
-        <include name="masters"/>
-      </run>
-    </groups>
     <classes>
       <class name="testcases.TC_01">
         <methods>
@@ -15,4 +14,23 @@
       </class> <!-- testcases.TC_01 -->
     </classes>
   </test> <!-- Listeners-Ex-Test-Group-01(failed) -->
+  <test name="Listeners-Ex-Test-Group-02(failed)">
+    <classes>
+      <class name="testcases.TC_02">
+        <methods>
+          <include name="method_05"/>
+          <include name="method_08"/>
+        </methods>
+      </class> <!-- testcases.TC_02 -->
+    </classes>
+  </test> <!-- Listeners-Ex-Test-Group-02(failed) -->
+  <test name="Listeners-Ex-Test-Group-03(failed)">
+    <classes>
+      <class name="testcases.TC_03">
+        <methods>
+          <include name="method_12"/>
+        </methods>
+      </class> <!-- testcases.TC_03 -->
+    </classes>
+  </test> <!-- Listeners-Ex-Test-Group-03(failed) -->
 </suite> <!-- Failed suite [Suite_01] -->

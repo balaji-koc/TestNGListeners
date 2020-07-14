@@ -8,7 +8,7 @@ public class TC_02 {
 	@Test(groups={"func", "masters"},priority=6,dependsOnMethods="method_08")
 	public void method_05()
 	{
-		System.out.println("In method_05 .....");
+		System.out.println("In method_05 ......");
 		Assert.assertTrue(true);
 	}
 	
