@@ -34,5 +34,11 @@ public class TC_01 {
 		
 	}
 	
-
+	@Test(groups={"masters"},priority=3)
+	public void method_05()
+	{
+		System.out.println("In method_04 .....WSP 01_01");
+		Assert.assertFalse(true);
+		
+	}
 }
